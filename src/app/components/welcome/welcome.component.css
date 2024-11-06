@@ -1,0 +1,6 @@
+.card {
+  transition: background-color 0.5s ease; /* Adjust time as needed */
+}
+.card:hover {
+  background-color: grey !important;
+}
