@@ -1,6 +1,10 @@
 .card {
-  transition: background-color 0.5s ease; /* Adjust time as needed */
+    transition: background-color 0.5s ease; /* Adjust time as needed */
 }
 .card:hover {
-  background-color: grey !important;
+    background-color: rgb(160, 160, 160) !important;
+}
+
+.custom-footer {
+    background: linear-gradient(45deg, rgb(40, 160, 230), rgb(5, 100, 179));
 }
