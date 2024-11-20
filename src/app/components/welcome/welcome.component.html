@@ -27,8 +27,8 @@
 
     <div class="d-flex flex-grow-1"></div>
 
-    <div class="row mx-0 mx-xl-2 justify-content-around">
-        <div class="col-12 col-lg-6 col-xxl-5" role="button">
+    <div class="row mx-0 mx-lg-2 justify-content-around">
+        <div class="col-12 col-md-10 col-lg-6 col-xxl-5" role="button">
             <a href="https://dt.uwmh.eu/" target="_blank">
                 <div
                     class="card text-white overflow-hidden flex-grow-1 mb-0 h-100"
@@ -65,7 +65,10 @@
             </a>
         </div>
 
-        <div class="col-12 col-lg-6 col-xxl-5 mt-4 mt-lg-0" role="button">
+        <div
+            class="col-12 col-md-10 col-lg-6 col-xxl-5 mt-4 mt-lg-0"
+            role="button"
+        >
             <a href="https://impetus.uwmh.eu/" target="_blank">
                 <div
                     class="card text-white overflow-hidden flex-grow-1 mb-0 h-100"
@@ -141,8 +144,9 @@
 
     <div class="d-flex flex-grow-1"></div>
 
+    <!-- Footer for bigger screen sizes -->
     <div
-        class="d-none d-xl-flex justify-content-between align-items-center gap-4 min-vw-100 p-4 custom-footer"
+        class="d-none d-lg-flex justify-content-between align-items-center gap-4 min-vw-100 p-4 custom-footer"
     >
         <a href="https://climate-impetus.eu/" target="_blank">
             <img
@@ -170,9 +174,7 @@
             />
         </a>
 
-        <div
-            class="fs-5 fw-semibold text-white px-0 px-xl-5 d-flex align-items-center"
-        >
+        <div class="fs-5 fw-semibold text-white px-3 d-flex align-items-center">
             <a href="https://european-union.europa.eu/index_en" target="_blank">
                 <img
                     class="px-3"
@@ -182,12 +184,25 @@
                 />
             </a>
 
-            <span>
-                The IMPETUS project has received funding from the European
-                Union’s Horizon 2020 research and innovation programme under
-                grant agreement No 101037084 Funded in the EU Horizon 2020 Green
-                Deal call</span
-            >
+            <span>{{ impetusFunding }}</span>
+        </div>
+    </div>
+
+    <!-- Footer for smaller screen sizes -->
+    <div
+        class="d-flex d-lg-none justify-content-between align-items-center gap-4 min-vw-100 p-4 custom-footer"
+    >
+        <div class="fs-5 fw-semibold text-white d-flex align-items-center">
+            <a href="https://european-union.europa.eu/index_en" target="_blank">
+                <img
+                    class="px-3"
+                    src="/assets/images/europe.png"
+                    alt="Europe Flag"
+                    height="45px;"
+                />
+            </a>
+
+            <span>{{ impetusFunding }}</span>
         </div>
     </div>
 </div>
